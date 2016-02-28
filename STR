@@ -1,0 +1,133 @@
+# BashScripting
+
+Brackets
+if [ CONDITION ]    Test construct  
+if [[ CONDITION ]]  Extended test construct  
+Array[1]=element1   Array initialization  
+[a-z]               Range of characters within a Regular Expression  
+
+Curly Brackets
+${variable}                             Parameter substitution  
+${!variable}                            Indirect variable reference  
+{ command1; command2; . . . commandN; } Block of code  
+{string1,string2,string3,...}           Brace expansion  
+{a..z}                                  Extended brace expansion  
+{}                                      Text replacement, after find and xargs
+
+Parentheses
+( command1; command2 )             Command group executed within a subshell  
+Array=(element1 element2 element3) Array initialization  
+result=$(COMMAND)                  Command substitution, new style  
+>(COMMAND)                         Process substitution  
+<(COMMAND)                         Process substitution  
+
+Double Parentheses
+(( var = 78 ))            Integer arithmetic   
+var=$(( 20 + 5 ))         Integer arithmetic, with variable assignment   
+(( var++ ))               C-style variable increment   
+(( var-- ))               C-style variable decrement   
+(( var0 = var1<98?9:21 )) C-style ternary operation
+
+POSIX vs Bash extension:
+
+[ is POSIX
+[[ is a Bash extension
+
+3.1.2.2 Single Quotes
+
+Enclosing characters in single quotes (‘'’) preserves the literal value of each character within the quotes. A single quote may not occur between single quotes, even when preceded by a backslash.
+
+3.1.2.3 Double Quotes
+
+Enclosing characters in double quotes (‘"’) preserves the literal value of all characters within the quotes, with the exception of ‘$’, ‘`’, ‘\’, and, when history expansion is enabled, ‘!’. 
+
+The special parameters ‘*’ and ‘@’ have special meaning when in double quotes
+
+EGREP vs FGREP vs GREP
+---------------------------------------
+
+grep
+grep is an acronym that stands for "Global Regular Expressions Print". grep is a program which scans a specified file or files line by line, returning lines that contain a pattern. A pattern is an expression that specifies a set of strings by interpreting characters as meta-characters. For example the asterisk meta character (*) is interpreted as meaning "zero or more of the preceding element". This enables users to type a short series of characters and meta characters into a grep command to have the computer show us what lines in which files match.
+
+egrep
+egrep is an acronym that stands for "Extended Global Regular Expressions Print".
+
+The 'E' in egrep means treat the pattern as a regular expression. "Extended Regular Expressions" abbreviated 'ERE' is enabled in egrep. egrep (which is the same as grep -E) treats +, ?, |, (, and ) as meta-characters.
+
+In basic regular expressions (with grep), the meta-characters ?, +, {, |, (, and ) lose their special meaning. If you want grep to treat these characters as meta-characters, escape them  \?, \+, \{, \|, \(, and \).
+
+fgrep
+fgrep is an acronym that stands for "Fixed-string Global Regular Expressions Print".
+
+fgrep (which is the same as grep -F) is fixed or fast grep and behaves as grep but does NOT recognize any regular expression meta-characters as being special. The search will complete faster because it only processes a simple string rather than a complex pattern.
+
+""  '' ``
+------------------------------
+
+The same thing works when you use the ` character to expand a command on the command line. For instance, say you wanted to use the pwd command from within another command—you’d use backticks to tell the shell to expand it:
+
+echo `pwd`/test
+
+If you were in your home folder you’d see output that looked like this:
+
+/home/geek/test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
