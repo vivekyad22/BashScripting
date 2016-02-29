@@ -1,5 +1,9 @@
 # BashScripting
 
+Using Bash & Perl scripts for automating day to day tasks. You can view some of my bash scripts on below URL -
+
+
+
 Brackets
 if [ CONDITION ]    Test construct  
 if [[ CONDITION ]]  Extended test construct  
