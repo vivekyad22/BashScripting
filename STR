@@ -4,7 +4,7 @@ http://www.linuxtechi.com/linux-shell-scripting-interview-questions-answers/
 http://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples/
 https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux
 https://www.digitalocean.com/community/tutorials/intermediate-sed-manipulating-streams-of-text-in-a-linux-environment
-
+http://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr/
 
 
 # BashScripting
@@ -73,6 +73,8 @@ fgrep
 fgrep is an acronym that stands for "Fixed-string Global Regular Expressions Print".
 
 fgrep (which is the same as grep -F) is fixed or fast grep and behaves as grep but does NOT recognize any regular expression meta-characters as being special. The search will complete faster because it only processes a simple string rather than a complex pattern.
+
+
 
 ""  '' ``
 ------------------------------
